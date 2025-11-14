@@ -1,6 +1,9 @@
 # backend-expose
 
-![Version: 0.1.0](https://img.shields.io/badge/Version-0.1.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 1.16.0](https://img.shields.io/badge/AppVersion-1.16.0-informational?style=flat-square)
+
+
+
+![Version: 0.1.0](https://img.shields.io/badge/Version-0.1.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 1.16.0](https://img.shields.io/badge/AppVersion-1.16.0-informational?style=flat-square) 
 
 A Helm chart for Kubernetes
 
@@ -15,6 +18,8 @@ A Helm chart for Kubernetes
 ## Source Code
 
 * <https://github.com/epmd-edp/java-maven-java17.git>
+
+
 
 ## Values
 
@@ -31,12 +36,6 @@ A Helm chart for Kubernetes
 | image.repository | string | `"backend-expose"` |  |
 | image.tag | string | `""` | Overrides the image tag whose default is the chart appVersion. |
 | imagePullSecrets[0].name | string | `"regcred"` |  |
-| ingress.annotations | object | `{}` |  |
-| ingress.dnsWildcard | string | `"shared.edp-dev.cloudmentor.academy"` |  |
-| ingress.enabled | bool | `false` |  |
-| ingress.path | string | `"/"` |  |
-| ingress.pathType | string | `"Prefix"` | pathType is only for k8s >= 1.1= |
-| ingress.tls | list | `[]` |  |
 | livenessProbe.tcpSocket.port | string | `"http"` |  |
 | nameOverride | string | `""` |  |
 | nodeSelector | object | `{}` | https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/#nodeselector |
